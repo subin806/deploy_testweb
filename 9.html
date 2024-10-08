@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>10월 8일 복습</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* p{
+            color:gray;
+        } */
+
+        /* .accent {
+            border: 1px solid black;
+            padding: 5px;
+        }  */
+
+        @import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+
+        /* .wfont {
+            font-family: "Gamja Flower", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: large
+        } */
+
+        div {
+            width: 200px;
+            height: 100px;
+            display: inline-block;
+            margin: 15px;
+            border: 1px solid red;
+            border-radius: 20px;
+        }
+
+        .box1 {
+            box-shadow: 5px -2px 5px 3px;
+            width: 300px;
+            height: 150px;
+            border-top-color: blue;
+            border-left-color: purple;
+            border-bottom-color: yellow;
+            border-right-color: green;
+        }
+
+        .box2 {
+            box-shadow: 5px 5px 15px 5px red;
+            border-width: 5px 10px 10px 5px;
+        }
+
+        body{
+            background: url(background-image.jpg) left top no-repeat fixed;
+            background-size: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>5단원</h1>
+    <fieldset>
+        <label>ID: <input type="text" id="user_id" size="10"></label>
+        <label>PASSWORD: <input type="password" id="user_pw" size="10"></label>
+        <input type="image" src="login.png" alt="Log In" width="7%">
+    </fieldset>
+    <fieldset>
+        <label class="heading" for="memo">MEMO</label>
+        <textarea id="memo" cols="50" rows="5"></textarea>
+    </fieldset>
+
+    <h1 style="color: green;">6단원</h1>
+
+    <p style="color:purple;">캐스케이딩의 의미</p>
+    <p>'위에서 아래로 흐른다'는 뜻. 즉 <span class="accent">계단식으로</span> 적용된다는 의미로 사용</p>
+    <p>선택자에 여러 스타일이 적용될 때 스타일 충돌을 막기 위해 우선순위에 따라 적용할 스타일 결정</p>
+
+    <h1>7단원</h1>
+    <p> 웹 폰트 사용하기</p>
+    <p class="wfont"> 웹 문서 안에 글꼴 정보도 함께 저장했다가 사용자가 웹 문서에 접속하면 글꼴을 사용자 시스템으로 다운로드시켜 사용하는 글꼴</p>
+    <p>text-decoration 속성</p>
+    <p class="wfont" style="text-decoration:none">밑줄 표시 X</p>
+    <p class="wfont" style="text-decoration:underline">밑줄 표시 O</p>
+    <p class="wfont" style="text-decoration:overline">영역 위로 선을 그림</p>
+    <p class="wfont" style="text-decoration:line-through">영역을 가로지르는 선을 그림</p>
+
+    <h1>8단원</h1>
+    <p>css와 박스모델</p>
+    <div class="box1">CSS</div>
+    <div class="box2">Box Model</div>
+
+    <h1>9단원</h1>
+    <p>backgroud 속성</p>
+
+</body>
+
+</html>
