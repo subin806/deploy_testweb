@@ -1,0 +1,47 @@
+.accent {
+            border: 1px solid rgb(138, 6, 245);
+            padding: 5px;
+            width: 150px;
+        }
+
+        .bg {
+            background-color: rgb(166, 166, 236);
+        }
+
+        .box1 {
+            margin: auto;
+            border: 5px solid gray;
+            width: 500px;
+            height: 200px;
+            border-style: dotted;
+            border-radius: 30%;
+            box-sizing: border-box
+        }
+
+        .box2 {
+            margin: 50px;
+            border: 2px double yellow;
+            width: 400px;
+            height: 200px;
+            box-shadow: 5px 10px 10px 15px rgb(8, 54, 8);
+        }
+
+        .img_1 {
+            float: right;
+            height: 150px;
+            margin-right: 40px;
+        }
+
+        body {
+            background-image: url(image/hotel-image.png);
+            background-repeat: no-repeat;
+            background-position: right top;
+            background-attachment: fixed;
+        }
+
+        .box3 {
+            width: 100px;
+            height: 100px;
+            background: pink;
+            background: linear-gradient(to right bottom, red, white);
+        }
