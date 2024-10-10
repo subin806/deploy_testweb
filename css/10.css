@@ -1,9 +1,44 @@
+.h2_2 {
+    text-align: center;
+    color: green;
+    font-size: x-large;
+}
+ul {
+    list-style: none;
+}
+li {
+    width: 150px;
+    display: inline-block;
+    margin: 20px;
+}
+li a {
+    padding: 5px 20px;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a[href] {
+    background: rgb(243, 170, 243);
+    border: 1px solid rgb(15, 1, 24);
+    font-weight: normal;
+}
+
+a[title ^="road"] {
+    background: url(image/car.jpg) no-repeat left center;
+    background-size: 10px;
+}
+.header_1 {
+    text-align: center;
+    color: green;
+    font-size: x-large;
+}
 .box4 {
     width: 100px;
     height: 100px;
     margin: 60px auto;
     animation: rotate 1.5s infinite, background 1.5s infinite alternate;
 }
+
 @keyframes rotate {
     from {
         transform: perspective(120px) rotateX(0deg) rotateY(0deg)
@@ -31,11 +66,13 @@
         background-color: brown
     }
 }
+
 .container {
-    width:500px;
-    display: flex;
-    background-color: black;
-    border: 1px solid red;
+ display: flex;
+ background-color: yellow;
+border: 1px solid black;
+margin-bottom: 30px;
+height: 200px;
 }
 
 .box6 {
@@ -43,9 +80,28 @@
     margin: 5px;
     width: 500px;
     background-color: rgb(238, 164, 164);
-    text-align: center;
+
 }
 
 #opt1 {
     flex-direction: row;
+}
+.box5 {
+    margin: 50px auto;
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    border: 1px solid black;
+    transition: 2s ease-in-out;
+}
+.box5:hover {
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    transform: rotate(270deg);
+}
+.header_2 {
+    text-align: center;
+    color: green;
+    font-size: x-large;
 }

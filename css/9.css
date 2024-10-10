@@ -45,3 +45,21 @@
             background: pink;
             background: linear-gradient(to right bottom, red, white);
         }
+        h2{
+            text-align: center;
+            color: green;
+        }
+        .font_2{
+            font-size: small;
+            text-shadow: 5px 5px 5px blue;
+            letter-spacing: 1em;
+        }
+        .box4 {
+            width: 300px;
+            height: 150px;
+            background-image: url("image/coding2.jpg");
+            background-size: auto;
+            background-origin: border-box;
+            background-position: left bottom;
+            background-attachment: fixed;
+        }
