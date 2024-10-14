@@ -17,14 +17,14 @@
     <div id="menuPrice"></div>
 
     <div id="add">
-        <h1>ADD New Menu<h1>
-            <p>먹고 싶은 메뉴를 추가해 보세요<p>
-                <form action="">
-                    <input type="text" id="subject" autofocus>
-                    <button id="button" onclick="newRegister(); return false;">추가</button>
-                    </form>
-                    <ul id="menuList"></ul>
-                </div>
+        <h1>ADD New Menu</h1> 
+        <p>먹고 싶은 메뉴를 추가해 보세요</p> 
+        <form action="">
+            <input type="text" id="subject" autofocus>
+            <button id="button" onclick="newRegister(); return false;">추가</button>
+        </form>
+        <ul id="menuList"></ul> 
+    </div>
 
     <script>
         const lunchMenu = [
@@ -37,7 +37,6 @@
             { img: 'image/연어덮밥.jpg', name: '마마돈', price: '15500원' },
             { img: 'image/샌드위치.jpg', name: '써브웨이', price: '9500원' }
         ];
-
 
         function randomMenu() {
             const randomIndex = Math.floor(Math.random() * lunchMenu.length);
@@ -52,20 +51,17 @@
             menuPrice.textContent = selectedMenu.price;
         }
 
-        function newRegister( {
+        function newRegister() {  
             var newItem = document.createElement("li");
             var subject = document.querySelector("#subject");
             var newText = document.createTextNode(subject.value);
             newItem.appendChild(newText);
 
-            var itemlist = document.querySelector("#itemList");
+            var itemList = document.querySelector("#menuList"); 
             itemList.appendChild(newItem);
 
-            subject.value="";
-        })
-
-        
-
+            subject.value = ""; 
+        }
     </script>
 
 </body>
