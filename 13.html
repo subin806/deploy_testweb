@@ -4,55 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My HomePage</title>
+    <title>조수빈의 홈페이지</title>
+    <link rel="stylesheet" a href="css/13.css">
     <style>
-        h3 {
+        /* 중간 이미지랑 텍스트 */
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px;
+        }
+
+        .main img {
+            width: 80%;
+            height: auto;
+            border: 5px solid #ccc;
+        }
+
+        .main p {
+            margin-top: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            width: 70%;
             text-align: center;
         }
-
-        .accent {
-            border: 1px solid rgb(217, 217, 217);
-            padding: 5px;
-            width: 150ox;
-            background-color: rgb(217, 217, 217);
-        }
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-        }
-.accenet.bg{
-    font-size: 24px;
-    margin: 0;
-}
-.buttons button {
-  padding: 10px 20px;
-  margin-left: 10px; /* 버튼 사이에 간격 추가 */
-  border: none;
-  background-color: #007BFF;
-  color: white;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.buttons button:hover {
-  background-color: #0056b3;
-}
-
     </style>
 </head>
 
 <body>
     <div class="header">
-        <h3 class="accent bg">
-            <img scr="images/icon.jpg" alt="조수빈의 홈페이지" class="homepageImage">
-        </h3>
+        <h1>조수빈의 홈페이지</h1>
+    </div>
+
+    <div class="nav">
+        <a href="13.html">
+            <img src="images/icon.jpg" alt="집 모양 아이콘">
+        </a>
         <div class="buttons">
-            <button class="login-btn">로그인</button>
-            <button class="signup-btn">회원가입</button>
+            <button onclick="location.href='login.html'">로그인</button>
+            <button onclick="location.href='signup.html'">회원가입</button>
+            <button onclick="location.href='mainpage.html'">상세페이지</button>
         </div>
     </div>
+
+    <div class="main">
+        <img src="images/welcome.jpg" alt="메인 이미지">
+        <p>조수빈의 홈페이지에 오신 걸 환영합니다.</p>
+    </div>
+
 </body>
 
 </html>
